@@ -1,0 +1,124 @@
+/* Обнуление*/
+body{
+	overflow-x:hidden;
+}
+*{margin: 0;padding: 0; font-family: 'MerriweatherRegular';}
+a{text-decoration: none; color: white;  }
+/* Шрифты */
+@font-face{
+	font-family: 'MerriweatherRegular';
+	src: url(fonts/Merriweather-Regular.ttf);
+}
+@font-face{
+	font-family: 'MerriweatherBold';
+	src: url(fonts/Merriweather-Bold.ttf);
+}
+/*Основные стили nav*/
+.nav{
+	height:80px;
+	background-color: #C821DDFF;
+	color: #fff;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.logo{
+	font-family: MerriweatherBold;
+	text-transform: uppercase; 
+	font-size: 25px;
+	padding-left: 20px;
+}
+.nav-item-box{
+	display: inline-flex;
+	margin-right: 20px; 
+	align-items: center;
+}
+.nav-items{
+	margin-right: 20px; 
+}
+.active{
+	background-color: #D259DDFF;
+	padding: 3px 7px;
+	border-radius: 30px;
+	margin-right: 20px;
+}
+
+/*контент сайта*/
+.main{
+
+}
+.content{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+.card{
+	margin-top: 40px;
+	border: 2px solid #D259DDFF;
+	width: 300px;
+	text-align: center;
+
+}
+.card-img{
+
+}
+.card-img-item{
+	width: 200px;
+	height: 200px;
+
+}
+.card-title{
+	font-size: 25px; 
+}
+.card-text{
+	padding: 0px 10px;
+}
+.card-btn{
+	margin-top: 10px;
+	padding: 5px 0px;
+	background-color: #D259DDFF; 
+	text-transform: uppercase;
+	font-size: 18px;
+	
+}
+/* Медиа запросы */
+
+@media (max-width: 956px) {
+	.card{
+		width: 400px;
+	}
+	
+	.content{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+@media  ( max-width: 410px) {
+	.nav{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 80px;
+	}
+	.nav-item-box{
+		margin-left: 30px;
+	}
+	.logo{
+		margin-right:10px;
+	}
+
+	.card{
+		width: 300px;
+		
+	}
+	.content{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+}
